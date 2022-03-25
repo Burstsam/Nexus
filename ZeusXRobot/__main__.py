@@ -96,24 +96,24 @@ STICKERS = (
 buttons = [
     [
         InlineKeyboardButton(
-                            text="☑️ SUBMIT GOD ZEUS ☑️",
-                            url="t.me/ZeusXRobot?startgroup=true"),
+                            text="Aᴅᴅ ɴᴀʀᴜᴛᴏ ᴛᴏ ʏᴏᴜʀ ᴄʜᴀᴛ ",
+                            url="t.me/NarutoXProrobot?startgroup=true"),
                     ],
                    [
-                       InlineKeyboardButton(text="💓Source", url="https://github.com/Ctzfamily/ZeusXRobot"),
-                       InlineKeyboardButton(text="📊 Network", url="https://t.me/PegasusBots"),
-                       InlineKeyboardButton(text="🔔 Logs", url="https://t.me/ZeusXRobotlogs"),
+                       InlineKeyboardButton(text="ᴏᴡɴᴇʀ", url="https://t.me/AstaSilva02"),
+                       InlineKeyboardButton(text="Hᴏᴋᴀɢᴇs", url="https://t.me/Hokage_Network"),
+                       InlineKeyboardButton(text="ᴍᴀsᴛᴇʀ", url="https://t.me/dipuid"),
                      ],
                     [                  
                        InlineKeyboardButton(
-                             text="👫 Freedom",
-                             url=f"https://t.me/UnitedSupport"),
+                             text="Cʜɪᴛ Cʜᴀᴛ",
+                             url=f"https://t.me/anime_talkk"),
                        InlineKeyboardButton(
-                             text="⚡ ZeusUpdates",
-                             url=f"https://t.me/Zeusupdates"),
+                             text=" Sᴜᴘᴘᴏʀᴛ ",
+                             url=f"https://t.me/marin_support"),
                      ],
                     [
-                    InlineKeyboardButton(text="🔐 Open commads 🔐", callback_data="help_back"
+                    InlineKeyboardButton(text="🔐 ɢᴇᴛ ʜᴇʟᴘ 🔐", callback_data="help_back"
          ),
     ],
 ] 
@@ -125,8 +125,8 @@ Helpful commands:
 - /start: Starts me! You've probably already used this.
 - /help: Sends this message; I'll tell you more about myself!
 - /donate: Gives you info on how to support me and my creator.
-If you want to report bugs or have any questions on how to use me then feel free to reach out: @ZeusSupportChat.
-All commands can be used with the following: *(/),(!),(?),(.),(~)*[!](https://telegra.ph/file/648aca75adfb9533a2161.jpg)
+If you want to report bugs or have any questions on how to use me then feel free to reach out: @Marin_Support.
+All commands can be used with the following: *(/),(!),(?),(.),(~)*[!](https://telegra.ph/file/83913c4fddd570c066579.jpg)
 List of all the Modules:
 """.format(
     dispatcher.bot.first_name,
@@ -134,8 +134,8 @@ List of all the Modules:
 )
 
 HELP_MSG = "Click the button below to get help manu in your pm."
-DONATE_STRING = """t.me/unitedsupport"""
-HELP_IMG= "https://telegra.ph/file/5f296f959250d7cd88b09.jpg"
+DONATE_STRING = """@ASTASILVA02"""
+HELP_IMG= "https://telegra.ph/file/6a1cf403dfcc8a81f4d87.jpg"
 
 
 IMPORTED = {}
@@ -220,7 +220,7 @@ def start(update: Update, context: CallbackContext):
                     update.effective_chat.id,
                     HELPABLE[mod].__help__,
                     InlineKeyboardMarkup(
-                        [[InlineKeyboardButton(text="⬅Back", callback_data="help_back")]]
+                        [[InlineKeyboardButton(text="⬅Bᴀᴄᴋ", callback_data="help_back")]]
                     ),
                 )
 
@@ -337,7 +337,7 @@ def help_button(update, context):
         if mod_match:
             module = mod_match.group(1)
             text = (
-                "*Powered By @PegasusXteam*\n *Module Name:*`{}`\n".format(
+                "*Powered By @Hokage_Network*\n *Module Name:*`{}`\n".format(
                     HELPABLE[module].__mod_name__
                 )
                 + HELPABLE[module].__help__
@@ -713,7 +713,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}","* [Rᴀsᴇɴ Sʜᴜʀɪᴋᴇɴ](https://telegra.ph/file/4c744b817b4d2a7351372.jpg)*", parse_mode=ParseMode.MARKDOWN) 
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}","* Rᴀsᴇɴ Sʜᴜʀɪᴋᴇɴ *", parse_mode=ParseMode.MARKDOWN) 
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!",
