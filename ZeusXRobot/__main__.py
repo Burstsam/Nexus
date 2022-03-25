@@ -79,17 +79,18 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-──『[GOD OF THUNDER](https://telegra.ph/file/4c33a90f7df190fd81763.jpg)』──
+────「 [Nᴀʀᴜᴛᴏ Uᴢᴜᴍᴀᴋɪ](https://telegra.ph/file/c49eca182d268caa66fed.jpg) 」────
 
-*Hello User!!*
-𝐇𝐞𝐲 𝐈'𝐦 [๖ۣۜZΞUS༻](https://en.m.wikipedia.org/wiki/Zeus),👋
-𝐈 𝐀𝐦 𝐀 𝐆𝐫𝐞𝐞𝐤 𝐌𝐲𝐭𝐡𝐨𝐥𝐨𝐠𝐲 𝐆𝐨𝐝 
-𝐀𝐝𝐝 𝐌𝐞 𝐓𝐨 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩 𝐈 𝐖𝐢𝐥𝐥 𝐃𝐞𝐬𝐭𝐫𝐨𝐲 𝐄𝐯𝐢𝐥𝐬 𝐖𝐢𝐭𝐡 𝐌𝐲 𝐓𝐡𝐮𝐧𝐝𝐞𝐫...
+*Wᴇʟᴄᴏᴍᴇ ᴛᴏ ɴᴀʀᴜᴛᴏ Bᴏᴛ!*
+ I am an Anime themed advance group management bot with a lots of Features.
+➖➖➖➖➖➖➖➖➖➖➖
+➖➖➖➖➖➖➖➖➖➖➖
+➛ Try The Help Buttons Below To Know My Abilities. ××
 
-──『*ᴛʜᴀɴᴋs  ғᴏʀ  ᴜsɪɴɢ*』"""
+──『*Bʏ ɴᴀʀᴜᴛᴏ , Mᴀɴᴀɢᴇᴅ Bʏ  @Hokage_Network *』"""
 STICKERS = (
-      "CAACAgUAAx0CRiLf0wACvWBhmnKjHrrDcVgz6Ssk5wvA05NLDQACbgIAAv_H2FQTHfy_9X7rfSIE", #1
-      "CAACAgUAAx0CRiLf0wACvWZhmnOJLucdVwga5fnQJ0i7tD6nIgACsAQAAq042VQYQWM0cthfbyIE", #2
+      "CAACAgQAAxkBAAIEJ2I96HjNyhKZHnTD-ZgXIfjtD0CfAAKVCgACzBgdA0vBJimS44KPIwQ", #1
+      "CAACAgQAAxkBAAIEJ2I96HjNyhKZHnTD-ZgXIfjtD0CfAAKVCgACzBgdA0vBJimS44KPIwQq", #2
 )
 
 buttons = [
@@ -712,7 +713,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}","*Zeus Is Ready ⚡*", parse_mode=ParseMode.MARKDOWN) 
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}","* [Rᴀsᴇɴ Sʜᴜʀɪᴋᴇɴ](https://telegra.ph/file/4c744b817b4d2a7351372.jpg)*", parse_mode=ParseMode.MARKDOWN) 
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!",
@@ -755,7 +756,7 @@ def main():
             updater.bot.set_webhook(url=URL + TOKEN)
 
     else:
-        LOGGER.info("Zeus is now alive and functioning")
+        LOGGER.info("ɴᴀʀᴜᴛᴏ is now alive and functioning")
         updater.start_polling(timeout=15, read_latency=4, clean=True)
 
     if len(argv) not in (1, 3, 4):
