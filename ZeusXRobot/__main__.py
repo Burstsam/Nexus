@@ -113,10 +113,11 @@ buttons = [
                              url=f"https://t.me/marin_support"),
                      ],
                     [
-                    InlineKeyboardButton(text="🔐 ɢᴇᴛ ʜᴇʟᴘ 🔐", callback_data="help_back"
+                    InlineKeyboardButton(text="🔐 Open commads 🔐", callback_data="help_back"
          ),
     ],
 ] 
+
 
 HELP_STRINGS = """
 Hi there, I'm *{}*!
